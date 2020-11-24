@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: box-border;
+  font-family: 'Titillium Web', sans-serif;
+}
+body{
+  background-color: #36495cc0;
+}
+.rounded{
+  border-color: #769bbdc0;
+}
+img{
+  max-width: 100%;
+}
+#ciaDedam{
+  display: flex;
+  flex-wrap: wrap;
+}
