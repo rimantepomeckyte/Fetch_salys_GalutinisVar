@@ -77,10 +77,10 @@ const suggestions = async () => {
         const response = await fetch(`https://restcountries.eu/rest/v2/name/${reiksme}`);
         const data = await response.json();
         console.log(data)
-        for(let i=0; i<data.length; i++){
+        for (let i = 0; i < data.length; i++) {
             const option = document.createElement("option");
             suggestionsList.appendChild(option);
-            option.innerHTML=data[i].name;
+            option.innerHTML = data[i].name;
         }
     } catch (error) {
         console.log("Su by country negerai!");
@@ -90,7 +90,6 @@ const suggestions = async () => {
 byCountry.addEventListener("keyup", suggestions);
 
 //----------pagal sali-------
-//?? kalba, valiuta tik po pirmaji varianta meta, kaip padaryti kad mestu visus kiek yra?
 const pagalSali = async () => {
     console.log("pagal sali f-ja");
     const reiksme = byCountry.value;
@@ -103,8 +102,49 @@ const pagalSali = async () => {
         data.forEach(salis => {
             const divas = document.createElement("div");
             divas.setAttribute("class", "mr-2");
+            divas.style.width = "18rem"
+            const image = document.createElement("img");
+            image.src = salis.flag;
+            const salisName = document.createElement("h5");
+            salisName.setAttribute("class", "text-center text-light")
+            salisName.innerHTML = salis.name;
+            const salisCapital = document.createElement("p");
+            salisCapital.setAttribute("class", "text-center");
+            salisCapital.style.fontSize = "14px";
+            salisCapital.innerHTML = salis.capital;
+            const valiutList = document.createElement("ul");
+            valiutList.style.listStyleType = "none";
+            valiutList.style.fontSize = "14px";
+            valiutList.setAttribute("class", "text-light");
+            valiutList.innerHTML = "Currencies: ";
+            const kalbuList = document.createElement("ul");
+            kalbuList.setAttribute("class", "text-light");
+            kalbuList.style.listStyleType = "none";
+            kalbuList.style.fontSize = "14px";
+            kalbuList.innerHTML = "Languages: "
             ciaDedam.appendChild(divas);
+            divas.appendChild(image);
+            divas.appendChild(salisName);
+            divas.appendChild(salisCapital);
+            divas.appendChild(valiutList);
+            divas.appendChild(kalbuList);
+
             for (let valiuta in salis.currencies) {
+                console.log(salis.currencies[valiuta].name);
+                const valiutItems = document.createElement("li");
+                valiutItems.setAttribute("class", "text-dark")
+                valiutItems.innerHTML = salis.currencies[valiuta].name;
+                valiutList.appendChild(valiutItems);
+            }
+            for (let kalba in salis.languages) {
+                console.log(salis.languages[kalba].name);
+                const kalbuItems = document.createElement("li");
+                kalbuItems.setAttribute("class", "text-dark")
+                kalbuItems.innerHTML = salis.languages[kalba].name;
+                kalbuList.appendChild(kalbuItems);
+            }
+
+            /*for (let valiuta in salis.currencies) {
                 for (let kalba in salis.languages) {
                     console.log(salis.languages[kalba].name)
                     console.log(salis.currencies[valiuta].name)
@@ -117,7 +157,7 @@ const pagalSali = async () => {
     <p class="">Official Language: ${salis.languages[kalba].name}</p>
 </div>`
                 }
-            }
+            }*/
         })
     } catch (error) {
         console.log("Su by country negerai!");
