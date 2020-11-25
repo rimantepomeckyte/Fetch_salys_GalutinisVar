@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="276ff23a-ff5d-4f16-90de-79af691debcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/world-background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world-map.jpg" beforeDir="false" />
-    </list>
+    <list default="true" id="276ff23a-ff5d-4f16-90de-79af691debcb" name="Default Changelist" comment="PApildytas" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1klnvvJsDEHUuAJWlMnxVSIVGWJ" />
   <component name="ProjectViewState">
@@ -56,8 +52,15 @@
       <option name="presentableId" value="Default" />
       <updated>1606284280121</updated>
       <workItem from="1606284282046" duration="2120000" />
-      <workItem from="1606286543829" duration="1914000" />
+      <workItem from="1606286543829" duration="2278000" />
     </task>
+    <task id="LOCAL−00001" summary="PApildytas">
+      <created>1606289571079</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1606289571079</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +76,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PApildytas" />
+    <option name="LAST_COMMIT_MESSAGE" value="PApildytas" />
   </component>
 </project>
