@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="276ff23a-ff5d-4f16-90de-79af691debcb" name="Default Changelist" comment="PApildytas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Oru_prognozes_kurimas" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,7 +57,16 @@
       <option name="presentableId" value="Default" />
       <updated>1606284280121</updated>
       <workItem from="1606284282046" duration="2120000" />
-      <workItem from="1606286543829" duration="4732000" />
+      <workItem from="1606286543829" duration="6031000" />
+      <workItem from="1606296121307" duration="2149000" />
+      <workItem from="1606462134435" duration="1247000" />
+      <workItem from="1606570048171" duration="19000" />
+      <workItem from="1606737808637" duration="821000" />
+      <workItem from="1606740207228" duration="1263000" />
+      <workItem from="1607692558212" duration="1603000" />
+      <workItem from="1607794018955" duration="14000" />
+      <workItem from="1608024338411" duration="665000" />
+      <workItem from="1608577820333" duration="934000" />
     </task>
     <task id="LOCAL−00001" summary="PApildytas">
       <created>1606289571079</created>
@@ -69,7 +80,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1606289648322</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="PApildytas">
+      <created>1606292234596</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1606292234596</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,15 +102,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PApildytas" />
     <option name="LAST_COMMIT_MESSAGE" value="PApildytas" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606289692966">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608578471831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606289692966" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608578471831" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1606292267757">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1606292267757" />
   </component>
 </project>

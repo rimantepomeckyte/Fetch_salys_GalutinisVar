@@ -60,6 +60,7 @@ const pagalRegiona = async () => {
             ciaDedam.appendChild(cardDiv);
             cardDiv.appendChild(flagImage);
             cardDiv.appendChild(countryName);
+            byRegion.value ="";
         })
     } catch (error) {
         console.log("Su regionais negerai!");
@@ -69,14 +70,16 @@ const pagalRegiona = async () => {
 searchBtnRegion.addEventListener("click", pagalRegiona);
 
 //----------suggestions listas----------
-//?? dabar meta vis nauja option kai tik ivedu papildoma raide, kaip padaryti kad mestu vienos salies viena option
 const suggestions = async () => {
     const reiksme = byCountry.value;
     console.log(reiksme)
     try {
         const response = await fetch(`https://restcountries.eu/rest/v2/name/${reiksme}`);
         const data = await response.json();
-        console.log(data)
+        console.log(data);
+        while (suggestionsList.firstChild){
+            suggestionsList.removeChild(suggestionsList.firstChild);
+        }
         for (let i = 0; i < data.length; i++) {
             const option = document.createElement("option");
             suggestionsList.appendChild(option);
@@ -94,7 +97,11 @@ const pagalSali = async () => {
     console.log("pagal sali f-ja");
     const reiksme = byCountry.value;
     console.log(reiksme);
+
     try {
+        if(reiksme == ''){
+            alert("Please enter country name")
+        }else{
         const response = await fetch(`https://restcountries.eu/rest/v2/name/${reiksme}`);
         const data = await response.json();
         console.log(data);
@@ -105,7 +112,7 @@ const pagalSali = async () => {
             divas.style.width = "18rem"
             const image = document.createElement("img");
             image.src = salis.flag;
-            const salisName = document.createElement("h5");
+            const salisName = document.createElement("h4");
             salisName.setAttribute("class", "text-center text-light")
             salisName.innerHTML = salis.name;
             const salisCapital = document.createElement("p");
@@ -143,7 +150,7 @@ const pagalSali = async () => {
                 kalbuItems.innerHTML = salis.languages[kalba].name;
                 kalbuList.appendChild(kalbuItems);
             }
-
+            byCountry.value= "";
             /*for (let valiuta in salis.currencies) {
                 for (let kalba in salis.languages) {
                     console.log(salis.languages[kalba].name)
@@ -158,7 +165,8 @@ const pagalSali = async () => {
 </div>`
                 }
             }*/
-        })
+
+        })}
     } catch (error) {
         console.log("Su by country negerai!");
         console.log(error);
